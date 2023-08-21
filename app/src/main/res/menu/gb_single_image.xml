@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ns1="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/action_delete"
+        ns1:showAsAction="ifRoom"
+        android:icon="@drawable/gb_ic_delete_black_24dp"
+        android:orderInCategory="100"
+        android:title="Delete"
+        android:visible="true" />
+    <item
+        android:id="@+id/action_share"
+        ns1:showAsAction="ifRoom"
+        android:icon="@drawable/gb_ic_share_img"
+        android:orderInCategory="100"
+        android:title="Share"
+        android:visible="true" />
+</menu>

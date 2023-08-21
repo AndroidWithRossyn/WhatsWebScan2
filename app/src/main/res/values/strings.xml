@@ -1,0 +1,51 @@
+<resources>
+    <string name="app_name">GB Version 2022</string>
+
+    <string name="gb_PoppinsMedium">Poppins-Medium.ttf</string>
+    <string name="gb_download">/Download/</string>
+    <string name="gb_no_result_found">Results not found</string>
+    <string name="gb_pathSeparator">/</string>
+    <string name="gb_picker_title">Select Contacts</string>
+    <string name="gb_primary">primary</string>
+    <string name="gb_rate_me_message">If you enjoy using this app, please take a moment to rate it on Google Play. Thank you for your support!</string>
+    <string name="gb_rate_me_neutral_btn">Exit</string>
+    <string name="gb_rate_me_positive_btn">Rate App</string>
+    <string name="gb_rate_me_title">Rate Whats Web Scan App</string>
+    <string name="gb_search_hint">Search...</string>
+    <string name="gb_select_country">Select a county/region</string>
+    <string name="gb_sshow">\n 1). Open WhatsApp.\n\n 2). Watch the status you want to download.\n\n 3). Once status load completely, return back to this application.\n\n 4). You will find status hear.\n\n 5). To save the status click on Download icon.\n\n 6). Last seen status will be on top of the screen. Enjoy :)\n</string>
+    <string name="gb_status_image">Status Images</string>
+    <string name="gb_status_video">Status Videos</string>
+    <string name="gb_storage">storage</string>
+    <string name="gb_tv_no_contacts">No contacts found</string>
+    <string name="gb_tv_select_all_btn_text">Select All</string>
+    <string name="gb_tv_select_btn_text_disabled">Finish</string>
+    <string name="gb_tv_select_btn_text_enabled">Finish(%1$s)</string>
+    <string name="gb_tv_unselect_all_btn_text">Un-select All</string>
+    <string name="gb_two_dot">:</string>
+    <string name="gb_user_agent_string">Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.113 Safari/537.36</string>
+    <string name="gb_whatsapp_host">.whatsapp.com</string>
+    <string name="gb_whatsapp_web_url">https://web.whatsapp.com</string>
+
+
+    <string name="gb_whatsapp_not_installed">Whtasapp not installed.</string>
+    <string name="gb_wrong_folder">Wrong folder</string>
+    <string name="gb_videos">Videos</string>
+    <string name="gb_images">Images</string>
+    <string name="gb_saved_to">Saved to:</string>
+    <string name="gb_download_complete">Download Completed</string>
+    <string name="gb_selected_wrong_folder">You have selected wrong folder. Please select .Statuses folder to view Whatsapp Status.</string>
+    <string name="gb_app_not_available">App Not Available.</string>
+    <string name="gb_no_app_installed">No application found to open this file.</string>
+    <string name="gb_ok">OK</string>
+    <string name="gb_share_txt">Hey view/download this image</string>
+    <string name="gb_share_image_via">Share File via...</string>
+    <string name="gb_do_u_want_to_dlt">Do you want to delete?</string>
+    <string name="gb_yes">Yes</string>
+    <string name="gb_no">No</string>
+    <string name="gb_file_deleted">File Deleted.</string>
+
+    <string name="gb_network_error">No Internet!\nMake sure you are connect to Internet</string>
+
+
+</resources>

@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/transparent"
+    app:cardBackgroundColor="#FAFAFA"
+    app:cardCornerRadius="15dp"
+    app:cardElevation="5dp"
+    app:cardMaxElevation="5dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/gb_ads_bgnew"
+        android:padding="5dp">
+
+        <TextView
+            android:id="@+id/exit_tittle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:padding="5dp"
+            android:text="Exit APP"
+            android:textAlignment="center"
+            android:textColor="@color/gb_fcolor"
+            android:textSize="@dimen/_14sdp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toStartOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/exit_details"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:padding="5dp"
+            android:text="Are You Sure Want Exit ?"
+            android:textAlignment="center"
+            android:textColor="@color/gb_fcolor"
+            android:textSize="@dimen/_14sdp"
+            android:textStyle="normal"
+            app:layout_constraintEnd_toStartOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/exit_tittle" />
+
+        <FrameLayout
+            android:id="@+id/Ad_Native"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="8dp"
+            android:orientation="vertical"
+            app:layout_constraintTop_toBottomOf="@+id/exit_details"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+        <Button
+            android:id="@+id/exit_cnl"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/gb_ads_corners_shape"
+            android:padding="5dp"
+            android:text="cancel"
+            android:textAlignment="center"
+            android:textColor="@color/gb_white"
+            android:textSize="@dimen/_12sdp"
+            android:textStyle="bold"
+            app:backgroundTint="@null"
+            app:layout_constraintEnd_toStartOf="@+id/exit_ok"
+            app:layout_constraintHorizontal_weight="1"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/Ad_Native" />
+
+        <Button
+            android:id="@+id/exit_ok"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/gb_ads_corners_shape"
+            android:padding="5dp"
+            android:text="ok"
+            android:textAlignment="center"
+            android:textColor="@color/gb_white"
+            android:textSize="@dimen/_12sdp"
+            android:textStyle="bold"
+            app:backgroundTint="@null"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_weight="1"
+            app:layout_constraintStart_toEndOf="@id/exit_cnl"
+            app:layout_constraintTop_toTopOf="@+id/exit_cnl" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>

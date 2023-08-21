@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/_200sdp"
+    android:layout_gravity="center">
+
+    <LinearLayout
+        android:layout_width="@dimen/_300sdp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/_25sdp"
+        android:layout_marginBottom="@dimen/_16sdp"
+        android:background="#36C52C"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/_30sdp"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="do you like our app"
+            android:textColor="@color/gb_selector_contact_select_text"
+            android:textSize="@dimen/_14sdp"
+            android:textStyle="bold"
+            android:typeface="serif" />
+
+        <TextView
+            android:id="@+id/tv_dialog_title_2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/_50sdp"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:layout_marginRight="@dimen/_50sdp"
+            android:gravity="center"
+            android:maxLines="2"
+            android:text="give us a quick rating so we know if you like it"
+            android:textColor="@color/gb_selector_contact_select_text"
+            android:textSize="@dimen/_10sdp"
+            android:typeface="serif" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_dialog_title_2">
+
+            <ImageView
+                android:id="@+id/rate1"
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:layout_marginEnd="10dp"
+                android:background="@drawable/gb_custom_favorite" />
+
+            <ImageView
+                android:id="@+id/rate2"
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:layout_marginEnd="10dp"
+                android:background="@drawable/gb_custom_favorite" />
+
+            <ImageView
+                android:id="@+id/rate3"
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:layout_marginEnd="10dp"
+                android:background="@drawable/gb_custom_favorite" />
+
+            <ImageView
+                android:id="@+id/rate4"
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:layout_marginEnd="10dp"
+                android:background="@drawable/gb_custom_favorite" />
+
+            <ImageView
+                android:id="@+id/rate5"
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:background="@drawable/gb_custom_favorite" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_submit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="@dimen/_8sdp"
+            android:background="@drawable/gb_ads_btn_bg_new"
+            android:fontFamily="sans-serif"
+            android:paddingStart="10dp"
+            android:paddingTop="6dp"
+            android:paddingEnd="10dp"
+            android:paddingBottom="6dp"
+            android:text="submit"
+            android:textAllCaps="true"
+            android:textColor="@color/gb_white"
+            android:textSize="@dimen/_13sdp"
+            android:visibility="gone"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/edt_input_text" />
+
+        <LinearLayout
+            android:id="@+id/tv_maybe_later"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/_50sdp"
+            android:layout_marginRight="@dimen/_50sdp"
+            android:orientation="vertical"
+            android:visibility="visible">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:gravity="center"
+                android:maxLines="2"
+                android:text="maybe later"
+                android:textColor="@color/gb_selector_contact_select_text"
+                android:textSize="@dimen/_12sdp"
+                android:typeface="serif" />
+
+            <TextView
+                android:layout_width="@dimen/_70sdp"
+                android:layout_height="1dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/_3sdp"
+                android:layout_marginBottom="@dimen/_16sdp"
+                android:background="#fff"
+                android:gravity="center" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="@dimen/_50sdp"
+        android:layout_height="@dimen/_50sdp"
+        android:elevation="10dp"
+        android:layout_centerHorizontal="true"
+        app:srcCompat="@drawable/gb_logo" />
+</RelativeLayout>

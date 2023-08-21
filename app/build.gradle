@@ -1,0 +1,129 @@
+//buildscript {
+//    repositories {
+//        google()
+//        mavenCentral()
+//        maven { url 'https://jitpack.io' }
+//    }
+//    dependencies {
+//        classpath "com.android.tools.build:gradle:7.1.2"
+//    }
+//}
+
+plugins {
+    id 'com.android.application'
+}
+
+android {
+    compileSdk 32
+
+    defaultConfig {
+        applicationId "com.whatsweb.whatswebscanner.gbwhats"
+        minSdk 21
+        targetSdk 32
+        versionCode 4
+        versionName "1.3"
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+
+    buildTypes {
+        release {
+            debuggable false
+            minifyEnabled true
+            shrinkResources true
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+        debug {
+            debuggable true
+            minifyEnabled true
+            shrinkResources true
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+}
+
+dependencies {
+    implementation project(path: ':AdsSdk')
+
+    implementation 'androidx.appcompat:appcompat:1.4.1'
+    implementation 'com.google.android.material:material:1.5.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.3'
+    implementation 'androidx.lifecycle:lifecycle-process:2.4.1'
+    testImplementation 'junit:junit:4.13.2'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.3'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.4.0'
+
+    //dimen
+    implementation 'com.intuit.sdp:sdp-android:1.0.6'
+    implementation 'com.intuit.ssp:ssp-android:1.0.6'
+
+    //googel Ads
+//    implementation 'com.google.android.gms:play-services-ads:20.5.0'
+
+    //Glide
+    implementation 'com.github.bumptech.glide:glide:4.13.0'
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.13.0'
+
+    //GSON
+    implementation 'com.google.code.gson:gson:2.9.0'
+
+    //shapeofview
+    implementation 'io.github.florent37:shapeofview:1.4.7'
+
+    //
+//    implementation 'com.github.broakenmedia:MultiContactPicker:1.8.5'
+
+    //multidex
+    implementation "androidx.multidex:multidex:2.0.1"
+
+    //libphonenumber
+    implementation 'io.michaelrocks:libphonenumber-android:8.12.44'
+
+    //
+    implementation 'com.hbb20:ccp:2.4.7'
+
+    //FileUtils
+    implementation 'commons-io:commons-io:2.4'
+
+    implementation 'io.reactivex.rxjava2:rxandroid:2.0.1'
+    implementation 'io.reactivex.rxjava2:rxjava:2.1.6'
+    implementation "io.github.l4digital:fastscroll:2.1.0"
+
+    implementation 'androidx.swiperefreshlayout:swiperefreshlayout:1.0.0'
+
+    implementation 'androidx.work:work-runtime:2.7.1'
+    implementation 'com.github.bumptech.glide:glide:4.13.0'
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.13.0'
+    implementation 'androidx.annotation:annotation:1.3.0'
+    implementation 'com.google.android.gms:play-services-ads:20.6.0'
+    implementation 'androidx.multidex:multidex:2.0.1'
+    implementation 'com.google.code.gson:gson:2.8.6'
+    implementation 'de.hdodenhof:circleimageview:3.1.0'
+    implementation 'com.android.volley:volley:1.2.1'
+    implementation 'com.airbnb.android:lottie:3.4.0'
+    implementation 'com.squareup.retrofit2:retrofit:2.9.0'
+    implementation 'com.squareup.okhttp3:logging-interceptor:5.0.0-alpha.3'
+    implementation 'com.squareup.retrofit2:converter-gson:2.9.0'
+    implementation 'com.squareup.retrofit2:converter-moshi:2.3.0'
+    def lifecycle_version = "2.0.0"
+    implementation "androidx.lifecycle:lifecycle-extensions:$lifecycle_version"
+    implementation "androidx.lifecycle:lifecycle-runtime:$lifecycle_version"
+    annotationProcessor "androidx.lifecycle:lifecycle-compiler:$lifecycle_version"
+    implementation 'org.jsoup:jsoup:1.14.3'
+    implementation 'de.mindpipe.android:android-logging-log4j:1.0.3'
+    implementation group: 'log4j', name: 'log4j', version: '1.2.17'
+    implementation "com.scottyab:rootbeer-lib:0.0.4"
+    implementation 'androidx.preference:preference:1.2.0'
+    implementation 'com.google.android.play:core:1.10.3'
+    implementation 'com.github.AnchorFreePartner.hydra-sdk-android:sdk:3.6.2'
+    implementation 'com.github.AnchorFreePartner.hydra-sdk-android:openvpn:3.6.2'
+    implementation group: 'com.flaviofaria', name: 'kenburnsview', version: '1.0.3'
+
+}

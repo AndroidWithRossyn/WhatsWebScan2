@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ns1="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/item_download"
+        ns1:showAsAction="always"
+        android:icon="@drawable/gb_ic_head_down"
+        android:title="Download" />
+    <item
+        android:id="@+id/truebtn"
+        ns1:showAsAction="always"
+        android:icon="@drawable/gb_truecheck"
+        android:title="Download" />
+    <item
+        android:id="@+id/item_share"
+        ns1:showAsAction="always"
+        android:icon="@drawable/gb_ic_head_share"
+        android:title="Share" />
+</menu>

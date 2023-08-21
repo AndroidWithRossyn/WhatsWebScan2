@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#c8dddddd"
+    android:orientation="vertical">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolBarWebView"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/gb_colorPrimaryDark"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <com.whatsweb.whatswebscanner.gbwhats.gb_customview.CustomTextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:ellipsize="end"
+            android:fontFamily="@font/gb_poppins_regular"
+            android:gravity="center_vertical"
+            android:singleLine="true"
+            android:text="How it Works?"
+            android:textColor="@color/gb_white"
+            android:textSize="@dimen/_14sdp" />
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/toolBarWebView"
+        android:layout_above="@+id/native_container"
+        android:fillViewport="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_4sdp"
+                android:layout_marginTop="@dimen/_7sdp"
+                android:layout_marginRight="@dimen/_4sdp"
+                android:orientation="vertical">
+
+                <com.whatsweb.whatswebscanner.gbwhats.gb_customview.CustomTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/gb_background_with_shadow"
+                    android:fontFamily="@font/gb_poppins_regular"
+                    android:gravity="start"
+                    android:padding="@dimen/_8sdp"
+                    android:text="How to Save Status?"
+                    android:textColor="#ffffffff"
+                    android:textSize="@dimen/_14sdp"
+                    android:textStyle="bold" />
+
+                <com.whatsweb.whatswebscanner.gbwhats.gb_customview.CustomTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#ffffffff"
+                    android:fontFamily="@font/gb_poppins_regular"
+                    android:padding="10dp"
+                    android:text="@string/gb_sshow"
+                    android:textColor="@color/gb_selector_contact_select_text"
+                    android:textSize="15sp" />
+            </LinearLayout>
+        </RelativeLayout>
+    </ScrollView>
+
+    <FrameLayout
+        android:id="@+id/native_container"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/gb_boder_white"
+        android:orientation="vertical" />
+
+</RelativeLayout>

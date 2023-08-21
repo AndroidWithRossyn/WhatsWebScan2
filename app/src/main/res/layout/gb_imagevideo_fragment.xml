@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffdddddd"
+    android:orientation="vertical">
+
+    <GridView
+        android:id="@+id/gridImgVidStatus"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="@dimen/_2sdp"
+        android:layout_marginRight="@dimen/_2sdp"
+        android:fastScrollEnabled="true"
+        android:gravity="center"
+        android:horizontalSpacing="@dimen/_2sdp"
+        android:numColumns="2"
+        android:stretchMode="columnWidth"
+        android:verticalSpacing="@dimen/_2sdp" />
+
+    <com.whatsweb.whatswebscanner.gbwhats.gb_customview.CustomTextView
+        android:id="@+id/noData"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:fontFamily="@font/gb_poppins_medium"
+        android:text="No Data"
+        android:textColor="@color/gb_black"
+        android:textSize="@dimen/_14sdp"
+        android:visibility="gone" />
+</RelativeLayout>

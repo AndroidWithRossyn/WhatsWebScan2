@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/gb_colorPrimary"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:fontFamily="@font/gb_poppins_regular"
+            android:text="Multi Message"
+            android:textColor="@color/gb_white"
+            android:textSize="@dimen/_16sdp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/native_container"
+        android:layout_below="@+id/toolbar"
+        android:layout_marginTop="5dp">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_marginRight="@dimen/_10sdp"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="3dp"
+            app:cardPreventCornerOverlap="true"
+            app:cardUseCompatPadding="true">
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:overScrollMode="never"
+                android:scrollbars="none">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingBottom="@dimen/_5sdp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:paddingLeft="@dimen/_10sdp"
+                        android:paddingRight="@dimen/_10sdp">
+
+                        <com.whatsweb.whatswebscanner.gbwhats.gb_customview.CustomTextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:layout_gravity="center"
+                            android:fontFamily="@font/gb_poppins_regular"
+                            android:gravity="center"
+                            android:lineSpacingExtra="@dimen/_2sdp"
+                            android:paddingLeft="@dimen/_10sdp"
+                            android:paddingTop="@dimen/_10sdp"
+                            android:paddingRight="@dimen/_10sdp"
+                            android:text="Multi Message for WhatsApp provides alternative to send a Multiple Message on Whatsapp Number."
+                            android:textColor="@color/gb_black"
+                            android:textSize="@dimen/_11sdp" />
+
+                        <com.whatsweb.whatswebscanner.gbwhats.gb_customview.CustomTextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:layout_gravity="center"
+                            android:fontFamily="@font/gb_poppins_regular"
+                            android:gravity="center"
+                            android:lineSpacingExtra="@dimen/_2sdp"
+                            android:paddingLeft="@dimen/_10sdp"
+                            android:paddingTop="@dimen/_10sdp"
+                            android:paddingRight="@dimen/_10sdp"
+                            android:text="First, Select country code and enter WhatsApp number to send WhatsApp Message"
+                            android:textColor="@color/gb_black"
+                            android:textSize="@dimen/_11sdp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="@dimen/_8sdp">
+
+                        <com.whatsweb.whatswebscanner.gbwhats.gb_countrypicker.CountryCodePicker
+                            android:id="@+id/country_picker"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="@dimen/_8sdp"
+                            android:layout_marginTop="@dimen/_12sdp" />
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="@dimen/_8sdp"
+                            app:cardBackgroundColor="@color/gb_white"
+                            app:cardElevation="@dimen/_1sdp">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:paddingLeft="@dimen/_3sdp"
+                                android:paddingRight="@dimen/_3sdp">
+
+                                <com.whatsweb.whatswebscanner.gbwhats.gb_customview.CustomEditTextView
+                                    android:id="@+id/edt_number"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="47dp"
+                                    android:layout_weight="1"
+                                    android:background="@android:color/transparent"
+                                    android:fontFamily="@font/gb_poppins_regular"
+                                    android:hint="Enter Your number"
+                                    android:inputType="phone"
+                                    android:paddingLeft="10dp"
+                                    android:textSize="@dimen/_12sdp" />
+
+                                <ImageView
+                                    android:id="@+id/img_contact_picker"
+                                    android:layout_width="@dimen/_20sdp"
+                                    android:layout_height="@dimen/_20sdp"
+                                    android:layout_gravity="center"
+                                    android:src="@drawable/gb_contact" />
+                            </LinearLayout>
+                        </androidx.cardview.widget.CardView>
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="@dimen/_8sdp"
+                            app:cardBackgroundColor="@color/gb_white"
+                            app:cardElevation="@dimen/_1sdp">
+
+                            <com.whatsweb.whatswebscanner.gbwhats.gb_customview.CustomEditTextView
+                                android:id="@+id/edt_message"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@android:color/transparent"
+                                android:fontFamily="@font/gb_poppins_regular"
+                                android:hint="Enter WhatsApp message"
+                                android:lines="5"
+                                android:paddingLeft="10dp"
+                                android:paddingRight="20dp"
+                                android:textSize="@dimen/_12sdp" />
+                        </androidx.cardview.widget.CardView>
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="@dimen/_8sdp"
+                            app:cardBackgroundColor="@color/gb_white"
+                            app:cardElevation="@dimen/_1sdp">
+
+                            <com.whatsweb.whatswebscanner.gbwhats.gb_customview.CustomEditTextView
+                                android:id="@+id/edt_select_time"
+                                android:layout_width="match_parent"
+                                android:layout_height="47dp"
+                                android:layout_weight="1"
+                                android:background="@android:color/transparent"
+                                android:fontFamily="@font/gb_poppins_regular"
+                                android:hint="No of repeat message"
+                                android:inputType="number"
+                                android:paddingLeft="10dp"
+                                android:textSize="@dimen/_12sdp" />
+                        </androidx.cardview.widget.CardView>
+
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/btn_send_message"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/msgLay"
+                            android:layout_centerInParent="true"
+                            android:layout_margin="@dimen/_8sdp"
+                            app:cardBackgroundColor="@color/gb_colorPrimary"
+                            app:cardCornerRadius="@dimen/_5sdp"
+                            app:cardElevation="@dimen/_1sdp">
+
+                            <com.whatsweb.whatswebscanner.gbwhats.gb_customview.CustomTextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_margin="8dp"
+                                android:fontFamily="@font/gb_poppins_regular"
+                                android:text="Send Message"
+                                android:textColor="#ffffffff"
+                                android:textSize="@dimen/_14sdp" />
+                        </androidx.cardview.widget.CardView>
+                    </LinearLayout>
+                </LinearLayout>
+            </ScrollView>
+        </androidx.cardview.widget.CardView>
+
+    </RelativeLayout>
+
+    <FrameLayout
+        android:id="@+id/native_container"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/gb_boder_white"
+        android:orientation="vertical" />
+
+</RelativeLayout>
